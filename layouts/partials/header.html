@@ -9,7 +9,7 @@
 
             <!-- sun icon -->
             <a id="theme-toggle" class="theme-toggle" href="#">
-                <img src="{{ .Site.BaseURL }}svg/sun.svg" alt="sun icon" class="theme-icon" />
+                <img src="{{ .Site.BaseURL }}/svg/sun.svg" alt="sun icon" class="theme-icon" />
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -61,11 +61,11 @@
         let themeIcon = document.querySelector(".theme-icon");
         if (theme === "dark") {
             body.classList.add("dark-mode");
-            themeIcon.src = "{{ .Site.BaseURL }}svg/moon.svg";
+            themeIcon.src = "{{ .Site.BaseURL }}/svg/moon.svg";
             themeIcon.alt = "moon icon";
         } else {
             body.classList.remove("dark-mode");
-            themeIcon.src = "{{ .Site.BaseURL }}svg/sun.svg";
+            themeIcon.src = "{{ .Site.BaseURL }}/svg/sun.svg";
             themeIcon.alt = "sun icon";
         }
         // Save the user-selected theme mode to local storage.
