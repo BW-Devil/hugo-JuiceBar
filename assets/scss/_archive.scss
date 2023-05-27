@@ -6,8 +6,13 @@
   line-height: 1.3em;
   text-align: left;
   color: #111;
+  font-family: $font-style;
 }
 
 .dark-mode .archive {
   color: $dark-font;
+}
+
+.h1-title {
+  font-family: $font-style;
 }
