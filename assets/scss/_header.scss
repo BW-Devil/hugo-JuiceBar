@@ -52,7 +52,8 @@
 
   #searchInput {
     height: 100%;
-    flex-shrink: 0
+    flex-shrink: 0;
+    font-family: $font-style;
   }
 
   #searchResults {
@@ -60,6 +61,7 @@
     margin-top: 10px;
     display: inline-block;
     border-radius: 5px;
+    font-family: $font-style;
 
     li {
       background-color: $main-light;
