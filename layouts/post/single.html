@@ -37,18 +37,18 @@
     {{- partial "comment.html" . -}}
     <div class="pp-container">
         <section class="pre-and-post">
-                        <div class="has-text-left">
-                            {{ with .PrevInSection }}
-                            <p>Previous post</p>
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                            {{ end }}
-                        </div>
-                        <div class="has-text-right">
-                            {{ with .NextInSection }}
-                            <p>Next post</p>
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                            {{ end }}
-                        </div>
+                <div class="has-text-left">
+                    {{ with .PrevInSection }}
+                    <p>Previous post</p>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                </div>
+                <div class="has-text-right">
+                    {{ with .NextInSection }}
+                    <p>Next post</p>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                </div>
         </section>
     </div>
 </div>
